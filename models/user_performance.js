@@ -30,6 +30,3 @@ const user_performance_schema = mongoose.Schema(
 );
 
 module.exports = mongoose.model("user_performance", user_performance_schema);
-
-test
-
