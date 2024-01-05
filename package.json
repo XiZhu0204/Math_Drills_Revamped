@@ -2,13 +2,15 @@
   "name": "math_drills_revamped",
   "version": "1.0.0",
   "description": "A website to facilitate simple math drills",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server"
+    "start": "electron .",
+    "dev": "nodemon express",
+    "start_express": "node express",
+    "package": "electron-packager ./ MathDrills"
   },
   "keywords": [],
-  "author": "",
+  "author": "Xi Zhu",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
@@ -17,6 +19,8 @@
     "mongoose": "^7.6.1"
   },
   "devDependencies": {
+    "electron": "^28.1.1",
+    "electron-packager": "^17.1.2",
     "nodemon": "^3.0.1"
   }
 }
